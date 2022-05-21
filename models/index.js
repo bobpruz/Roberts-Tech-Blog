@@ -3,7 +3,7 @@ const User = require("./User");
 const Post = require("./Post");
 const Comment = require("./Comment");
 
-// create Post association
+// create association
 
 Post.hasMany(Comment, {
   foreignKey: "post_id",
