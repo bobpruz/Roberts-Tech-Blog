@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const session = require("express-session");
 const sequelize = require("../config/connection");
 const { Post, User, Comment } = require("../models");
 const withAuth = require("../utils/auth");
@@ -30,7 +31,9 @@ router.get("/", withAuth, (req, res) => {
   })
     .then((dbPostData) => {
       const posts = dbPostData.map((post) => post.get({ plain: true }));
-      res.render("dashboard", { posts, loggedIn: true });
+      const username = req.session.username
+      const expireTime = req.session.cookie.expires
+      res.render("dashboard", { posts, username, expireTime, loggedIn: true });
     })
     .catch((err) => {
       console.log("error encountered", err);
