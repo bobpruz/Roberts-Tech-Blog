@@ -28,6 +28,7 @@ header {
 header nav {
   font-size: 1.5vw;
   font-weight: bold;
+  align-items: center;
 }
 
 form > div {
@@ -97,4 +98,9 @@ textarea, .textarea, .mb-3 {
 
 .meta {
   background-color: black;
+}
+
+.btn-link {
+  font-size: 1.5vw;
+  font-weight: bold;
 }
