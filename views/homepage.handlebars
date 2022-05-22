@@ -1,0 +1,11 @@
+<ol class="post-list mt-3">
+  {{#each posts as |post|}}
+  <li>
+    {{> post-info post }}
+  </li>
+  {{/each}}
+</ol>
+
+<div class="mt-3 mb-3">
+<a href="/dashboard/add-post"><button id="add-post">Add New Post</button></a>
+</div>
