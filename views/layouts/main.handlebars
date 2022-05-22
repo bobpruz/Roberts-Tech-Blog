@@ -21,16 +21,18 @@
         {{#if loggedIn}}
           <a href="/" class="pr-3 text-primary">Home</a>
           <a href="/dashboard" class="pr-3 text-primary">Dashboard</a>
-          <button id="logout">Logout</button>
+          <a href="/logout">Logout</a>
         {{else}}
           <a href="/" class="pr-3 text-primary">Home</a>
           <a href="/dashboard" class="pr-3 text-primary">Dashboard</a>
           <a href="/login">Login</a>
-          <a href="/signup">create Account</a>
+          <a href="/signup">Create Account</a>
         {{/if}}
       </nav>
     </header>
-    {{{body}}}
+    <main>
+      {{{body}}}
+    </main>
     <script src="/javascript/logout.js"></script>
   </body>
 </html>

@@ -2,7 +2,7 @@
   <div class="title">
     <div class="card" style="width: auto;">
       <div class="card-header">
-        <a href="/post/{{id}}" class="text-secondary">{{title}}</a>
+        <a href="/post/{{id}}" class="text-light">{{title}}</a>
       </div>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">{{post_content}}</li>
@@ -16,7 +16,7 @@
     on
     {{format_date created_at}}
     |
-    <a href="/post/{{id}}" class="text-muted">{{comments.length}}
+    <a href="/post/{{id}}" class="text-light">{{comments.length}}
       {{format_plural "comment" comments.length}}</a>
   </div>
 </article>

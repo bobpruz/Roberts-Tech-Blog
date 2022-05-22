@@ -4,18 +4,16 @@
 
 {{#if posts.length}}
 <section>
-  <h2 class="text-muted pl-4 post-margin">Your Posts</h2>
+  <h2 class="pl-4 post-margin">Your Posts</h2>
     <ol>
     {{#each posts as |post|}}
     <li>
       {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link text-primary">Edit Post</a>
+      <a href="/dashboard/edit/{{post.id}}"><button class="btn btn-dark text-light" id="add-post">Edit Post</button></a>
     </li>
     {{/each}}
   </ol>
 </section>
 {{/if}}
 
-<div class="mt-5 pt-3 pb-2">
-<a href="/dashboard/add-post" class="text-right"><button id="add-post">Add New Post</button></a>
-</div>
+<a href="/dashboard/add-post" class="mt-3" ><button class="btn btn-dark text-light" id="add-post">Add New Post</button></a>
