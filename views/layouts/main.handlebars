@@ -19,16 +19,18 @@
       </h1>
       <nav>
         {{#if loggedIn}}
-          <a href="/" class="pr-3 text-primary">homepage</a>
-          <a href="/dashboard" class="pr-3 text-primary">dashboard</a>
-          <button id="logout">logout</button>
+          <a href="/" class="pr-3 text-primary">Home</a>
+          <a href="/dashboard" class="pr-3 text-primary">Dashboard</a>
+          <button id="logout">Logout</button>
         {{else}}
-          <a href="/" class="pr-3 text-primary">homepage</a>
-          <a href="/dashboard" class="pr-3 text-primary">dashboard</a>
-          <a href="/login">login</a>
+          <a href="/" class="pr-3 text-primary">Home</a>
+          <a href="/dashboard" class="pr-3 text-primary">Dashboard</a>
+          <a href="/login">Login</a>
+          <a href="/signup">create Account</a>
         {{/if}}
       </nav>
     </header>
     {{{body}}}
+    <script src="/javascript/logout.js"></script>
   </body>
 </html>
