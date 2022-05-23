@@ -1,0 +1,106 @@
+/* all page */
+
+* {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  height: 100%;
+  color: lightgreen;
+  margin: 0;
+}
+
+h2 {
+  font-size: 3.5vw;
+}
+
+header {
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px 1%;
+  background-color: black;
+}
+
+header nav {
+  font-size: 1.5vw;
+  font-weight: bold;
+  align-items: center;
+}
+
+form > div {
+  margin-bottom: 2%;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  font-size: 2.5vw;
+}
+
+main {
+  flex: 1;
+  padding: 2% 4%;
+  background-color: lightslategray;
+  min-height: 100%;
+}
+
+textarea, .textarea, .mb-3 {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: .5%;
+  min-width: 100%;
+}
+
+.textarea {
+  height: 100px;
+}
+
+.login, .signup {
+  min-width: 50%;
+}
+
+.post {
+  margin-bottom: 2%;
+  line-height: 150%;
+}
+
+.post-margin {
+  margin-left: 14px;
+  color: lightgreen;
+}
+
+.title {
+  background-color: black;
+  font-size: 90%;
+  color: lightgreen;
+}
+
+.card {
+  border: 2px black;
+}
+
+.card-header {
+  background-color: black;
+  font-size: 2vw;
+}
+
+.list-group {
+  font-size: 1.25vw;
+}
+
+.text {
+  background-color: white;
+}
+
+.meta {
+  background-color: black;
+}
+
+.btn-link {
+  font-size: 1.5vw;
+  font-weight: bold;
+}

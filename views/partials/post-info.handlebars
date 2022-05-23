@@ -1,0 +1,22 @@
+<article class="post">
+  <div class="title">
+    <div class="card" style="width: auto;">
+      <div class="card-header">
+        <a href="/post/{{id}}" class="text-light">{{title}}</a>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{post_content}}</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="meta">
+    by
+    {{user.username}}
+    on
+    {{format_date created_at}}
+    |
+    <a href="/post/{{id}}" class="text-light">{{comments.length}}
+      {{format_plural "comment" comments.length}}</a>
+  </div>
+</article>

@@ -1,0 +1,20 @@
+<div class="comments">
+  {{#each comments}}
+  <section class="comment">
+    <div class="text">
+      <div class="meta">
+        {{user.username}} on {{format_date created_at}}
+      </div>
+      {{#if loggedIn}}
+      <input class="border" name="comment" type="text" data-id="{{id}}" value="{{comment_body}}" />
+      <button type="button" class="btn btn-dark text-light edit-comment-btn mt-2" data-id="{{id}}">Edit</button>
+      <button type="button" class="btn btn-dark text-light delete-comment-btn mt-2" data-id="{{id}}">Delete</button>
+      {{else}}
+      {{comment_body}}
+      {{/if}}
+    </div>
+  </section>
+  {{/each}}
+</div>
+
+<script src="/javascript/edit-comment.js"></script>
