@@ -9,7 +9,7 @@
     <li><a href="#built-with">Built With</a></li>
     <li><a href="#maintainer">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#sitelink">Site Link</a></li>
+    <li><a href="#site-link">Site Link</a></li>
     <li><a href="#screenshot">Screenshot</a></li>
   </ol>
 </details>
